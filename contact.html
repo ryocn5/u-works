@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACT（お問い合わせ）｜U.WORKS（ユウワークス刺繍店）</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/hover.css">
+  <link rel="stylesheet" href="css/hamburger-menu.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/hamburger-menu.js"></script>
+
+</head>
+
+<body id="contact">
+  <div class="page">
+    <div class="header-bg">
+      <header>
+        <h1><a class="hvr-grow-rotate" href="index.html"><img src="images/header-logo.png" alt="U.WORKS"></a></h1>
+        <div class="header-nav">
+          <nav>
+            <ul>
+              <li><a href="/">TOP<br><span>トップ</span></a></li>
+              <li><a href="index.html#about">ABOUT US<br><span>お店紹介</span></a></li>
+              <li><a href="works.html">WORKS<br><span>制作事例</span></a></li>
+              <li><a href="order.html">ORDER<br><span>注文の流れ</span></a></li>
+              <li><a href="faq.html">FAQ<br><span>質問あるある</span></a></li>
+              <li><a href="contact.html">CONTACT<br><span>お問い合わせ</span></a></li>
+              <li><a href="index.html#access">ACCESS<br><span>店舗情報</span></a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- ハンバーガーメニュー -->
+        <button class="hamburger-button"><img src="images/hamburger-icon.png" alt=""></button>
+
+        <!-- ナビゲーション -->
+        <nav class="hamburger-nav">
+          <ul>
+            <li><a href="/">TOP<br><span>トップ</span></a></li>
+            <li><a href="index.html#about">ABOUT US<br><span>お店紹介</span></a></li>
+            <li><a href="works.html">WORKS<br><span>制作事例</span></a></li>
+            <li><a href="order.html">ORDER<br><span>注文の流れ</span></a></li>
+            <li><a href="faq.html">FAQ<br><span>質問あるある</span></a></li>
+            <li><a href="contact.html">CONTACT<br><span>お問い合わせ</span></a></li>
+            <li><a href="index.html#access">ACCESS<br><span>店舗情報</span></a></li>
+          </ul>
+        </nav>
+      </header>
+
+    </div>
+    <main>
+      <div class="contact-catch">
+        <p>下記の項目にご入力のうえ、ボタンを押してください。担当よりご連絡いたします。<br>
+          お見積りご依頼の際は、分かる範囲で商品に関する情報を教えて頂けるとスムーズです。<br>
+          内容によりお返事を差し上げられない場合、または、お返事にお時間をいただく場合があります。<br>
+          お問い合わせの内容によっては、電子メール以外の方法で回答を差し上げる場合がございます。
+        </p>
+        <div class="contact-h2">
+          <h2>CONTACT<br><span>お問い合わせ</span></h2>
+        </div>
+      </div>
+      <div class="contact-form">
+        <div class="required">
+          <form method="post" action="mail.php">
+            <label for="name">
+              <div class="inner">
+                <p>お名前</p><span>必須</span><br>
+              </div><input type="text" name="username" placeholder="全角で入力してください" required>
+            </label><br>
+
+            <label for="tel">
+              <div class="inner">
+                <p>TEL</p><span>必須</span><br>
+              </div><input type="tel" name="tel" placeholder="ハイフンなしの半角数字で入力してください" required>
+            </label><br>
+            <label for="email">
+              <div class="inner">
+                <p>E-mail</p><span>必須</span><br>
+              </div><input type="email" name="e-mail" placeholder="半角で入力してください" required>
+            </label><br>
+          </form>
+        </div>
+        <div>
+          <h3>商品に関するお問い合わせ</h3>
+        </div>
+
+
+        <div class="question">
+          <form method="post" action="mail.php">
+            <label>
+              <p>１． 刺繍 or プリント</p>
+              <div class="radio"><input type="radio" name="刺繍orプリント" value="刺繍" class="radio-plain" checked>刺繍<input
+                  type="radio" name="刺繍orプリント" value="プリント" class="radio-plain">プリント
+              </div>
+            </label>
+            <label>
+              <p>２．持ち込みですか？それともご注文ですか？</p>
+              <div class="radio">
+                <input type="radio" name="持ち込みor注文" value="持ち込み" class="radio-plain" checked>持ち込み<input type="radio"
+                  name="持ち込みor注文" value="注文" class="radio-plain">注文する
+
+              </div>
+            </label>
+            <label>
+              <p>３．デザインやイメージ画像はありますか？(eps,pdf,jpg) </p>
+              <div class="file"><input type="file" name="画像" accept=".png, .jpg, .jpeg, .pdf,.eps, "></div>
+            </label>
+            <label class="q-text">
+              <p>４．商品や素材について</p><input type="text" name="商品や素材" value="" placeholder="ここに入力してください">
+            </label>
+            <label class="q-text">
+              <p>５．場所や大きさについて</p><input type="text" name="場所や大きさ" value="" placeholder="ここに入力してください">
+            </label>
+            <label class="q-number">
+              <p>６．使用する色の数</p><input type="number" name="数量" value="">
+            </label>
+            <label class="q-text">
+              <p>７．書体名</p><input type="text" name="書体" value="" placeholder="ここに入力してください">
+            </label>
+            <label class="q-number">
+              <p>８．合計数量</p><input type="number" name="合計数量" value="">
+            </label>
+            <label>
+              <p>９．その他、要望がございましたらご記入ください。</p>
+              <textarea name="その他" id="" cols="50" rows="10" placeholder="ここに入力してください"></textarea>
+            </label>
+
+            <div class="send"><button type="submit">送信</button></div>
+
+          </form>
+        </div>
+
+
+
+
+
+
+      </div>
+  </div>
+
+
+
+  </main>
+
+  <div class="icons">
+    <div><a class="hvr-grow" href="tel:0989390789"><img src="images/tel-icon.png" alt="tel"></a></div>
+    <div><a class="hvr-grow" href="https://liff.line.me/1645278921-kWRPP32q/?accountId=786rxfib"><img
+          src="images/line-icon.png" alt="LINE"></a></div>
+    <div><a class="hvr-grow" href="mailto:u.works23@gmail.com"><img src="images/envelope-icon.png" alt="email"></a>
+    </div>
+    <div><a class="hvr-grow" href="https://instagram.com/u.works23?utm_medium=copy_link"><img
+          src="images/instagram-icon.png" alt="instagram"></a></div>
+  </div>
+  <p class="back-top scroll-fade"><a href="#top"><img src="images/scroll-icon.png" alt=""></a></p>
+
+  <footer>
+    <div class="footer-wrap">
+      <div class="footer-menu">
+        <div class="footer-logo"><a class="hvr-grow-rotate" href="index.html"><img src="images/footer-logo.png"
+              alt=""></a></div>
+        <div class="footer-nav">
+          <nav>
+            <ul>
+              <li><a href="/">TOP<br><span>トップ</span></a></li>
+              <li><a href="index.html#about">ABOUT US<br><span>お店紹介</span></a></li>
+              <li><a href="works.html">WORKS<br><span>制作事例</span></a></li>
+              <li><a href="order.html">ORDER<br><span>注文の流れ</span></a></li>
+              <li><a href="faq.html">FAQ<br><span>質問あるある</span></a></li>
+              <li><a href="contact.html">CONTACT<br><span>お問い合わせ</span></a></li>
+              <li><a href="index.html#access">ACCESS<br><span>店舗情報</span></a></li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+      <div class="border-white"><img src="images/footer-border.png"></div>
+      <div class="footer-address">
+        <address>〒 904-2172 沖縄県沖縄市泡瀬2-28-26</address>
+        <address class="tel-email">
+          <span class="tel">TEL : 098-939-0789</span><br><span class="email">Email : u.works23@gmail.com</span>
+        </address>
+
+        <div class="copy">
+          <small>
+            <p>&copy;U.WORKS2022. All Rights Reserved.</p>
+          </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  </div>
+
+</body>
+
+</html>
